@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@keyframes mudar-cor-texto {
+    0% { color: rgb(255, 165, 0); }
+    25% { color: rgb(255 , 204, 0); }
+    50% { color: rgb(255, 226, 10); }
+    75% { color: rgb(238, 255, 0); }
+    100% { color: rgb(255, 120, 0); }
+}
+
+@keyframes piscadinha {
+    0% { opacity: 1; } /* Opacidade total (visível) */
+    50% { opacity: 0; } /* Opacidade zero (invisível) */
+    100% { opacity: 1; } /* Opacidade total (visível) */
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: "Ubuntu Mono", monospace;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+header > h1 {
+    align-self: center;
+    animation: piscadinha 1s infinite;
+    color: rgb(255, 204, 0);
+    font-size: 3em;
+    width: auto;
+}
+
+h1:hover { 
+    animation: mudar-cor-texto 0.5s infinite;
+    background-color: rgba(0, 0, 0, 0.767);
+    text-shadow: 1px 1px 20px;
+    text-align: center;
+    width: auto;
+    padding: 20px;
+    border: 8px solid;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+#barralateral {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end; 
+    justify-content: space-around;
+}
+
+#barralateral > .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#barralateral > nav > .menu-principal, footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+nav > footer {
+    padding-bottom: 20px;
+}
+
+#pagina {
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pag {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.paragrafo> a > h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.paragrafo > p {
+    display: none;
+}
+
+.imagem > p > a > img {
+    display: flex;
+    justify-content: left;
+    box-shadow: 0px 0px 40px rgb(255, 204, 0);
+    max-width: 100%;
+    min-width: 100px;
+    height: auto;
+}
+

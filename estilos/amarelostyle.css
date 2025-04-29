@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@keyframes mudar-cor-texto {
+    0% { color: rgb(255, 165, 0); }
+    25% { color: rgb(255 , 204, 0); }
+    50% { color: rgb(255, 226, 10); }
+    75% { color: rgb(238, 255, 0); }
+    100% { color: rgb(255, 120, 0); }
+  }
+
+  @keyframes piscadinha {
+    0% { opacity: 1; } /* Opacidade total (visível) */
+    50% { opacity: 0; } /* Opacidade zero (invisível) */
+    100% { opacity: 1; } /* Opacidade total (visível) */
+  }
+
+body {
+    font-family: "Ubuntu Mono", monospace;
+    background-color: grey;
+}
+
+h1 {
+    animation: piscadinha 1s infinite;
+    color: rgb(255, 204, 0);
+    font-size: 3em;
+    width: 200px;
+    margin: 20px;  
+}
+
+h1:hover { 
+    animation: mudar-cor-texto 0.5s infinite;
+    background-color: rgba(0, 0, 0, 0.767);
+    text-shadow: 1px 1px 20px;
+    font-style: oblique;
+    text-align: center;
+    width: auto;
+    padding: 20px;
+    border: 8px solid;
+    border-radius: 20px;
+    box-shadow: 1px 1px 50px;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+}
+
+#barralateral, #pagina {
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 204, 0);  
+}
+
+
+#menu {
+    display: flex;
+}
+
+nav > .menu-principal > a {
+    display: block;
+    gap: 20px;
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 8px;
+    border: 2px solid rgb(255, 204, 0);
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px ;
+    margin: 15px 10px;
+}
+
+nav > .menu-principal > a:hover {
+    text-decoration: line-through;
+    color: rgb(255, 204, 0);
+    border-color: orange;
+    text-shadow: 1px 1px 30px;
+    box-shadow: 1px 1px 30px 10px rgb(246, 255, 0);
+    color: orange;    
+}
+
+nav > .menu-principal > a:active {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px 10px (189, 128, 247);
+    color: rgb(206, 92, 255);
+    
+}
+
+#pagina {
+    flex-wrap: wrap;
+    max-width: 1100px;
+    justify-content: space-evenly;
+    margin: auto;
+} 
+
+#pagina > .pag {
+    display: flex;
+    flex: 1 1 200px;
+    gap: 20px;
+    align-items: center; 
+    justify-content: center;   
+    float: left;
+    width: 50%;
+}
+
+.imagem {
+    flex: 0 1 auto;
+ }
+
+.imagem > p > a > img {
+    display: flex;
+    box-shadow: 0px 0px 50px rgb(255, 179, 0);
+    max-width: 100%;
+    min-width: 250px;
+    height: auto;
+}
+
+.imagem > p > a > img:hover {
+    box-shadow: 0px 0px 80px 20px rgb(255, 213, 0);
+} 
+
+.paragrafo {
+    text-align: center;
+    max-width: 150px;
+}
+
+.paragrafo > a:hover {
+    font-size: 1.2em;
+    text-shadow: 0px 0px 20px rgb(246, 255, 0);   
+}
+
+.paragrafo > a:active {
+    color: rgb(235, 192, 255);
+} 
