@@ -1,0 +1,25 @@
+@keyframes mudar-cor-texto {
+    0% { color: rgb(255, 165, 0); }
+    25% { color: rgb(255 , 204, 0); }
+    50% { color: rgb(255, 226, 10); }
+    75% { color: rgb(238, 255, 0); }
+    100% { color: rgb(255, 120, 0); }
+}
+
+@keyframes piscadinha {
+    0% { opacity: 1; } /* Opacidade total (visível) */
+    50% { opacity: 0; } /* Opacidade zero (invisível) */
+    100% { opacity: 1; } /* Opacidade total (visível) */
+}
+
+body {
+    font-family: monospace sans-serif;
+    background-image: url(../imagens/desenho-2-web3.png);
+    align-items: center;
+    justify-items: center;
+}
+
+div {
+    font-size: 3.5em;
+    animation: mudar-cor-texto 2s infinite;
+}
